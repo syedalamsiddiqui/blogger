@@ -1,0 +1,31 @@
+<div class="body-container">
+    <h2>Edit Your Blog</h2>
+    <div class="form-container">
+        <form [formGroup]="newBlogForm" (ngSubmit)="updateBlog()">
+            <div class="label-container">
+                <label for="title">
+                    <p class="label-text">Title</p>
+                </label>
+            </div>
+            <input type="text" placeholder="Enter Blog Title" id="title" formControlName="title">
+            <span *ngIf="title && title.invalid && title.touched else elseBlock" >This field can not be empty.</span>
+            <ng-template #elseBlock> <div class="spacer"></div> </ng-template>
+            <div class="label-container">
+                <label for="description">
+                    <p class="label-text">Description</p>
+                </label>
+            </div>
+            <!-- <input type="text" id="description" formControlName="description"> -->
+            <textarea id="description" formControlName="description" placeholder="Blog it up! (Minimum words count : 150)"></textarea>
+            <span *ngIf="description && description.invalid && description.touched else elseBlock">This field should have atleast 150 words.</span>
+            <!-- cols="110" rows="10" -->
+            <div class="action-palette">
+                <button id="cancelBtn" class="btn" (click)="cancelEdit()">Back</button>
+                <button id="postBtn" class="btn" type="submit" [disabled]="newBlogForm.invalid">Update</button>
+            </div>
+        </form>
+    </div>
+    <div class="cover-up">
+        P
+    </div>
+</div>

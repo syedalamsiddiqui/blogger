@@ -1,0 +1,10 @@
+.blog-template-container{
+    background-color: #bdbdbd;
+    width: 20vw;
+    height: 12.5vw;
+    overflow-y: auto;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid white;
+    overflow-wrap: break-word;
+}

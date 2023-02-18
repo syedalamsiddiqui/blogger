@@ -1,0 +1,26 @@
+<div class="body-container">
+    <h2>Your Blog</h2>
+    <div class="form-container">
+        <form [formGroup]="newBlogForm">
+            <div class="label-container">
+                <label for="title">
+                    <p class="label-text">Title</p>
+                </label>
+            </div>
+            <input type="text"  id="title-text" formControlName="title">
+            <div class="label-container">
+                <label for="description">
+                    <p class="label-text">Description</p>
+                </label>
+            </div>
+            <textarea id="description" formControlName="description"></textarea>
+            <div class="action-palette">
+                <button id="cancelBtn" class="btn" (click)="goBack()">Back</button>
+            </div>
+        </form>
+    </div>
+    <div class="cover-up">
+        P
+    </div>
+</div>
+

@@ -1,0 +1,17 @@
+<div class="body-container">
+    <h2 id="home-headline">My Blogs</h2>
+<div class="container">
+    <div *ngFor="let blog of blogs">
+        <app-blog-template [item] ="blog"></app-blog-template>
+    </div>
+    <p *ngIf="blogs.length==0" class="no-blogs-text">No Blogs present currently!</p>
+</div>
+<div class="cover-up">
+    P
+</div>
+
+</div>
+<div class="copyright">
+    © Created by Syed Alam Siddiqui.
+</div>
+

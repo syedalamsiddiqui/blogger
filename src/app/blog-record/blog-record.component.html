@@ -1,0 +1,11 @@
+<div class="table-row table-entry">
+    <div class="serial"><p class="entry-text">{{item[1]+1}}</p></div>
+    <div class="title"><p class="entry-text">{{item[0].title}}</p></div>
+    <div class="action-palette">
+        <button class="btn" id="viewBtn" routerLink="view/{{item[1]+1}}">View</button>
+        <button class="btn" id="editBtn" routerLink="edit/{{item[1]+1}}">Edit</button>
+        <button class="btn" id="deleteBtn" (click)="deleteBlog()">Delete</button>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

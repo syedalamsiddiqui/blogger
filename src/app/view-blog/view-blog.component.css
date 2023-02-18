@@ -1,0 +1,88 @@
+.body-container{
+    padding-inline: 10vw;
+    background-color: #424242;
+}
+.form-container{
+    background-color: #212121;
+    min-height: 20vw;
+    border-radius: 15px;
+    margin-block: 10px;
+    padding: 30px;
+    border: 2px solid white;
+    color: white;
+}
+h2{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    margin-block: 50px;
+}
+input{
+    height: 30px;
+    width: 90%;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin-inline: auto;
+    display: block;
+    margin-bottom: 40px;
+}
+input:disabled{
+    background-color: white;
+}
+textarea:disabled{
+    background-color: white;
+}
+span {
+    width: 90%;
+    margin-inline: auto;
+    display: block;
+    margin-bottom: 40px;
+    color: red;
+}
+
+textarea{
+    border-radius: 10px;
+    width: 90%;
+    min-height: 20vh;
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin-inline: auto;
+    display: block;
+    resize: vertical;
+    margin-bottom: 40px;
+}
+
+.label-text{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.label-container{
+    width: 90%;
+    margin-inline: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+.action-palette{
+    width: 50%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn{
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+}
+
+#cancelBtn{
+    background-color: #f44336;
+    color: white;
+}
+.cover-up{
+    margin-bottom: 10px;
+    color: #424242;
+    height: 20px;
+}

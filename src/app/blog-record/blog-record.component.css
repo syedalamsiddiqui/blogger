@@ -1,0 +1,66 @@
+h2 {
+    font-size: 2rem;
+}
+
+.table-row {
+    display: flex;
+    width: 97.5%;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 10px; 
+}
+
+.table-header {
+    background-color: #ce93d8;
+}
+.table-entry {
+    background-color: #eeeeee;
+    margin-block: 10px;
+}
+
+.serial {
+    width: 10%;
+    text-align: center;
+    border-right: 2px solid black;
+}
+
+.title {
+    width: 60%;
+    text-align: center;
+    border-right: 2px solid black;
+}
+
+.actions {
+    width: 30%;
+    text-align: center;
+}
+h3{
+    font-size: 1.3rem;
+}
+.entry-text{
+    font-size: 1rem;
+}
+.action-palette{
+    width: 30%;
+    display: flex;
+    gap: 10px;
+    justify-content:center ;
+}
+.btn{
+    cursor: pointer;
+    border-radius: 5px;
+    width: 20%;
+    height: 95%;
+    border: 1px solid #eeeeee;
+}
+#viewBtn{
+    background-color: #1e88e5;
+    color: white;
+}
+#editBtn{
+    background-color: #fdd835;
+}
+#deleteBtn{
+    background-color: #f44336;
+    color: white;
+}

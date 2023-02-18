@@ -1,0 +1,15 @@
+<div class="body-container">
+    <h2 id="home-headline">Manage your blogs</h2>
+<div class="container">
+    <div class="table-row table-header">
+        <div class="serial"><h3>Serial No</h3></div>
+        <div class="title"><h3>Blog Title</h3></div>
+        <div class="actions"><h3>Actions</h3></div>
+    </div>
+    <div *ngFor="let blog of blogs; let i = index">
+        <app-blog-record [item] ="[blog,i]"></app-blog-record>
+    </div>
+    
+</div>
+
+</div>
